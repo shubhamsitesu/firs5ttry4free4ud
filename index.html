@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FD Calculator - Calculate fixed deposit returns easily.">
+    <meta name="keywords" content="FD Calculator, Fixed Deposit, Interest Rate, Maturity Value, Financial Tools">
+    <meta name="author" content="FD Calculator">
+    <meta property="og:title" content="FD Calculator">
+    <meta property="og:description" content="An online tool for calculating fixed deposit returns">
+    <meta property="og:url" content="https://fd-calculator.com">
+    <meta property="og:type" content="website">
+    <title>FD Calculator - Calculate Fixed Deposit Interest & Maturity</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Schema Markup (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FD Calculator",
+      "url": "https://fd-calculator.com/",
+      "description": "An online tool to calculate fixed deposit returns.",
+      "author": {
+        "@type": "Organization",
+        "name": "FD Calculator",
+        "url": "https://fd-calculator.com/about"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FD Calculator",
+        "logo": "https://fd-calculator.com/images/logo.png",
+        "url": "https://fd-calculator.com"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "Not Availabe",
+        "contactType": "Customer Service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+</head>
+
+<body>
+<!-- Header with Hamburger Menu -->
+<header>
+    <div class="navbar">
+        <a href="/" class="logo">FD Calculator</a>
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Calculator Form -->
+<section id="calculator">
+    <div class="container">
+        <h1>Fixed Deposit Calculator</h1>
+        <p>Calculate your FD returns easily with our online FD Calculator</p>
+
+        <form id="fdCalculatorForm">
+            <input type="number" id="principal" placeholder="Initial Amount (₹)" step="any" required>
+            <input type="number" id="rate" placeholder="Interest Rate (%)" step="any" required>
+            <div class="input-group">
+                <input type="number" id="tenure" placeholder="Time Period" step="any" required>
+                <select id="tenure-unit">
+                    <option value="years">Years</option>
+                    <option value="months">Months</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label style="width: 100%; text-align: left;">Compounding Frequency:</label>
+                <select id="compoundingFrequency-unit">
+                    <option value="quarterly" selected>Quarterly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="annually">Annually</option>
+                </select>
+            </div>
+            <button type="submit">Calculate</button>
+            <div class="spinner" id="loadingSpinner"></div>
+        </form>
+        <div id="result" class="hidden">
+            <p>Initial Principal: ₹<span id="resultPrincipal"></span></p>
+            <p>Total Interest Earned: ₹<span id="resultInterest"></span></p>
+            <p><strong>Total Maturity Value: ₹<span id="resultTotal"></span></strong></p>
+        </div>
+        <canvas id="fdGrowthChart" width="400" height="200" style="display:none;"></canvas>
+        <canvas id="fdPieChart" style="display:none;"></canvas>
+        <!-- Fixed Deposit Section - This will appear after the graph -->
+<section id="fd-info" style="margin-top: 30px; text-align: left; padding: 20px;">
+<h2>What is Fixed Deposit (FD)?</h2>
+<p>A Fixed Deposit (FD) is a financial product offered by banks and non-banking financial companies (NBFCs) that provides investors with a higher rate of interest than a regular savings account, until the given maturity date. It is a risk-free investment option with a fixed time period, during which the investor cannot withdraw the funds without penalties.</p>
+
+<h3>Benefits of Fixed Deposit</h3>
+<p>Fixed Deposits come with several benefits that make them an attractive option for conservative investors:</p>
+<ul>
+    <li><strong>Guaranteed Returns:</strong> Fixed Deposits offer guaranteed returns with no market risks, ensuring that your investment grows safely.</li>
+    <li><strong>High Interest Rates:</strong> FD interest rates are higher than those of regular savings accounts, allowing your money to grow faster.</li>
+    <li><strong>Flexible Time Period:</strong> You can choose the tenure of your FD as per your financial goals, ranging from a few months to several years.</li>
+    <li><strong>Loan Against FD:</strong> In case of an emergency, you can take a loan against your FD without having to break it.</li>
+    <li><strong>Tax Benefits:</strong> Under section 80C of the Income Tax Act, investors can claim tax deductions on Fixed Deposits with a 5-year time period or more.</li>
+</ul>
+
+<h3>Pros of Fixed Deposits</h3>
+<p>Fixed Deposits are widely regarded as one of the safest forms of investment due to the following pros:</p>
+<ul>
+    <li><strong>Low Risk:</strong> Since FD returns are not dependent on market performance, they are less risky compared to other investments like stocks or mutual funds.</li>
+    <li><strong>Predictable Income:</strong> The interest earned on FD is fixed at the time of investment, making it easier to plan your finances.</li>
+    <li><strong>Interest Payment Options:</strong> You can choose between monthly, quarterly, or yearly interest payout options, depending on your needs.</li>
+    <li><strong>Capital Protection:</strong> Your principal investment is safe and protected by the bank or NBFC, with minimal chances of loss.</li>
+</ul>
+
+<h3>Risks of Fixed Deposits</h3>
+<p>Though Fixed Deposits are considered a safe investment, they do come with a few risks:</p>
+<ul>
+    <li><strong>Inflation Risk:</strong> The returns on FD may not always beat inflation, leading to a decrease in the real value of your money over time.</li>
+    <li><strong>Liquidity Risk:</strong> FD funds are locked for the chosen time period, and early withdrawal may incur penalties or reduced interest rates.</li>
+    <li><strong>Tax on Interest:</strong> Interest earned on Fixed Deposits is subject to tax as per applicable tax rates, which reduces the overall returns.</li>
+    <li><strong>Fixed Returns:</strong> FDs do not offer the flexibility of higher returns like stocks or mutual funds during periods of market growth.</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>Fixed Deposits are a reliable investment tool for low-risk individuals who prefer safety and fixed returns. While they may not offer the high returns that some other investments provide, their reliability and security make them an ideal option for conservative investors, especially for long-term savings goals or retirement planning.</p>
+</section>
+   </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About FD Calculator</h2>
+    <p>This tool helps you easily calculate fixed deposit returns based on your input of principal amount, interest
+        rate, and time period.</p>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>

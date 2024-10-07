@@ -1,0 +1,310 @@
+ /* General Reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Header Styling */
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+  color: #3498db;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.hamburger-menu div {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links li a:hover {
+  color: #3498db;
+}
+
+/* Hero section */
+header .hero-section {
+  padding: 60px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Calculator Section */
+#calculator {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#calculator h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form: Horizontal Alignment for large screens */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form input#tenure {
+  width: calc(66.67% - 20px); /* Increased length for desktop */
+}
+
+form button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #3498db; /* Change to a lighter blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+form input:focus {
+  border-color: #3498db; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Result Section */
+#result {
+  display: none;
+  margin-top: 20px;
+}
+
+#result p {
+  font-size: 18px;
+}
+
+#result strong {
+  font-size: 24px;
+}
+
+/* About Section */
+#about {
+  padding: 40px 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+
+  .hamburger-menu.active div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.active div:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger-menu.active div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 0;
+  }
+
+  form {
+      display: block;
+  }
+
+  form input,
+  form button {
+      max-width: 100%;
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .input-group input#tenure {
+      width: 60%; /* Set the width to full for mobile view */
+  }
+
+  .input-group select#tenure-unit {
+      width: 31%; /* Set the width to full for mobile view */
+  }
+
+  #tenure-unit {
+      height: 32px; /* Adjust height as needed */
+  }
+
+  #tenure-unit {
+      margin-top: 10px; /* Adjust this value as needed */
+  }
+
+  /* Mobile-specific styles for input group */
+  .input-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 10px 0;
+  }
+
+  .input-group input,
+  .input-group select {
+      width: 48%; /* Each input/select takes almost half of the row */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#fdGrowthChart {
+  width: 100%; /* Make it responsive */
+  height: 300px; /* Set a fixed height */
+  max-width: 600px; /* Optional: Limit max width for larger screens */
+  margin: 20px auto; /* Center the canvas */
+  display: none; /* Initially hidden */
+}
+
+#fdPieChart {
+  width: 100%; /* Make it responsive */
+  height: 300px; /* Set a fixed height */
+  max-width: 600px; /* Optional: Limit max width for larger screens */
+  margin: 20px auto; /* Center the canvas */
+  display: none; /* Initially hidden */
+}
+
+.spinner {
+  display: none;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
