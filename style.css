@@ -311,3 +311,71 @@ footer a:hover {
 html {
     scroll-behavior: smooth;
 }
+/* General styles for the information section */
+#fd-info {
+  padding: 40px 20px; /* Maintain consistent padding */
+  background-color: #ecf0f1; /* Optional: match your About section */
+  text-align: left; /* Align text to the left for better readability */
+  margin: 0 auto; /* Center the section */
+  max-width: 800px; /* Limit the max width for larger screens */
+}
+
+/* Responsive adjustments for headings and paragraphs */
+#fd-info h3 {
+  font-size: 1.5em; /* Adjust heading size */
+  margin-bottom: 15px; /* Add space below headings */
+}
+
+#fd-info p {
+  font-size: 1em; /* Standard paragraph size */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* List styling */
+#fd-info ul {
+  margin: 10px 0; /* Margin for the list */
+  padding-left: 20px; /* Indent the list */
+}
+
+#fd-info ul li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  #fd-info {
+    padding: 20px 10px; /* Reduce padding for mobile */
+  }
+
+  #fd-info h3 {
+    font-size: 1.25em; /* Smaller heading size on mobile */
+  }
+
+  #fd-info p {
+    font-size: 0.9em; /* Smaller paragraph size on mobile */
+  }
+}
+#fd-info {
+  margin-top: 80px; /* Reduced for better layout */
+  text-align: left;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #fd-info {
+      margin-top: 40px; /* Further reduced for mobile */
+  }
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  #fdPieChart {
+    height: 200px; /* Reduce height for mobile */
+  }
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  #fdGrowthChart {
+    height: 200px; /* Reduce height for mobile */
+  }
+}
