@@ -1,13 +1,13 @@
-      // Toggle the navbar links on hamburger menu click
-      document.addEventListener('DOMContentLoaded', function() {
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const navbarLinks = document.querySelector('.navbar-links');
-    
-        hamburgerMenu.addEventListener('click', function() {
-            navbarLinks.classList.toggle('active'); // Toggle 'active' class
-        });
+// Toggle the navbar links on hamburger menu click
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navbarLinks.classList.toggle('active'); // Toggle 'active' class
     });
-    
+});
+
 // FD Calculator Functionality
 document.querySelector('#fdCalculatorForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
@@ -27,7 +27,14 @@ document.querySelector('#fdCalculatorForm').addEventListener('submit', function 
         }
 
         // Calculate total months
-        const totalMonths = tenureUnit === 'months' ? years : years * 12;
+        let totalMonths;
+        if (tenureUnit === 'months') {
+            totalMonths = years;
+        } else if (tenureUnit === 'years') {
+            totalMonths = years * 12;
+        } else if (tenureUnit === 'days') {
+            totalMonths = years / 30; // Approximate days to months
+        }
 
         // Calculate interest
         let interest;
@@ -69,10 +76,16 @@ document.querySelector('#fdCalculatorForm').addEventListener('submit', function 
                 const growth = Math.round(principal * (Math.pow((1 + (rate / 100) / 12), i))); // Monthly compounding
                 dataPoints.push(growth);
             }
-        } else { // tenureUnit === 'years'
+        } else if (tenureUnit === 'years') {
             for (let i = 1; i <= years; i++) {
                 labels.push(`Year ${i}`);
                 const growth = Math.round(principal * (Math.pow((1 + (rate / 100)), i))); // Yearly compounding
+                dataPoints.push(growth);
+            }
+        } else if (tenureUnit === 'days') {
+            for (let i = 1; i <= years; i++) {
+                labels.push(`Day ${i}`);
+                const growth = Math.round(principal * (Math.pow((1 + (rate / 100) / 365), i))); // Daily compounding
                 dataPoints.push(growth);
             }
         }
@@ -95,7 +108,7 @@ document.querySelector('#fdCalculatorForm').addEventListener('submit', function 
                 maintainAspectRatio: true,
                 elements: {
                     line: {
-                        tension: 0 // Ensure the line is straight
+                        tension : 0 // Ensure the line is straight
                     }
                 }
             }
