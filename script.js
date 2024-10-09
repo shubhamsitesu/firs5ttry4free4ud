@@ -1,9 +1,13 @@
-   // Toggle the hamburger menu on click
-   document.querySelector('.hamburger-menu').addEventListener('click', function () {
-    this.classList.toggle('active');
-    document.querySelector('.navbar-links').classList.toggle('active');
-});
-
+      // Toggle the navbar links on hamburger menu click
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navbarLinks = document.querySelector('.navbar-links');
+    
+        hamburgerMenu.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active'); // Toggle 'active' class
+        });
+    });
+    
 // FD Calculator Functionality
 document.querySelector('#fdCalculatorForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
@@ -37,13 +41,13 @@ document.querySelector('#fdCalculatorForm').addEventListener('submit', function 
 
         let maturityValue = Math.round(principal + interest);
 
-        document.querySelector('#resultPrincipal').textContent = principal.toFixed(2);
         document.querySelector('#resultInterest').textContent = interest.toFixed(2);
         document.querySelector('#resultTotal').textContent = maturityValue.toFixed(2);
 
         // Show the results
-        document.querySelector('#result').classList.remove('hidden');
+        document.querySelector('#result').style.display = 'flex'; // Change to flex to show
         document.getElementById('loadingSpinner').style.display = 'none'; // Hide spinner after calculation
+
 
         // Prepare for chart display
         const ctxLine = document.getElementById('fdGrowthChart').getContext('2d');
