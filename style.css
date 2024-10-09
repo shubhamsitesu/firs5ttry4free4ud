@@ -384,3 +384,13 @@ margin-left: 10px; /* Space between label and select box */
       height: 200px; /* Reduce height for mobile */
     }
   }
+  @media only screen and (max-width: 768px) {
+  /* Decrease font size of one line in mobile view */
+  .input-group label {
+    font-size: 14px;
+  }
+  /* Decrease font size of header in mobile view */
+  .navbar-links li a {
+    font-size: 16px;
+  }
+}
