@@ -66,7 +66,6 @@
         </ul>
     </div>
 </header>
-
 <!-- Calculator Form -->
 <section id="calculator">
     <div class="container">
@@ -74,35 +73,46 @@
         <p>Calculate your FD returns easily with our online FD Calculator</p>
 
         <form id="fdCalculatorForm">
-            <input type="number" id="principal" placeholder="Initial Amount (₹)" step="any" required>
-            <input type="number" id="rate" placeholder="Interest Rate (%)" step="any" required>
             <div class="input-group">
-                <input type="number" id="tenure" placeholder="Time Period" step="any" required>
-                <select id="tenure-unit">
-                    <option value="years">Years</option>
-                    <option value="months">Months</option>
-                </select>
+                <label for="principal">Initial Amount (₹)</label>
+                <input type="number" id="principal" placeholder="10000" step="any" min="0" required>
             </div>
             <div class="input-group">
-                <label style="width: 100%; text-align: left;">Compounding Frequency:</label>
-                <select id="compoundingFrequency-unit">
-                    <option value="quarterly" selected>Quarterly</option>
-                    <option value="monthly">Monthly</option>
-                    <option value="annually">Annually</option>
-                </select>
+                <label for="rate">Interest Rate (%)</label>
+                <input type="number" id="rate" placeholder="6.5" step="any" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="tenure">Time Period</label>
+                <div class="time-period-wrapper">
+                    <input type="number" id="tenure" placeholder="5" step="any" min="0" required>
+                    <select id="tenure-unit">
+                        <option value="years">Years</option>
+                        <option value="months">Months</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="compounding-frequency-wrapper">
+                    <label for="compoundingFrequency-unit">Compounding Frequency</label>
+                    <select id="compoundingFrequency-unit">
+                        <option value="quarterly" selected>Quarterly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                </div>
             </div>
             <button type="submit">Calculate</button>
             <div class="spinner" id="loadingSpinner"></div>
         </form>
         <div id="result" class="hidden">
-            <p>Initial Amount: ₹<span id="resultPrincipal"></span></p>
             <p>Total Interest Earned: ₹<span id="resultInterest"></span></p>
             <p><strong>Total Maturity Value: ₹<span id="resultTotal"></span></strong></p>
         </div>
         <canvas id="fdGrowthChart" width="400" height="200" style="display:none;"></canvas>
         <canvas id="fdPieChart" style="display:none;"></canvas>
         <!-- Fixed Deposit Section - This will appear after the graph -->
-         </div>
+    </div>
 </section>
 <div>
 <section id="fd-info">
