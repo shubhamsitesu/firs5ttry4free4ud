@@ -114,6 +114,17 @@ header .navbar a:hover {
 .input-group label {
     text-align: left; /* Changed to left-aligned text */
 }
+.input-group {
+    margin-bottom: 0; /* Remove default margin */
+
+}
+
+.input-group input,
+.input-group select {
+    margin-top: 0; /* Remove any top margin for the input/select */
+    padding: 15px;
+}
+
 /* Header Styling */
 header {
     padding: 5px 0;
