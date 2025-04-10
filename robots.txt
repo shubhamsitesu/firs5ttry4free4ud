@@ -1,3 +1,34 @@
 User-agent: *
+Allow: /
 Disallow: /private/
-Sitemap: https://fd-calculator.com/sitemap.xml
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /search/
+Disallow: /?*
+Disallow: /*?*
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+
+# Sitemap Location
+Sitemap: https://bmi-calculator.in/sitemap.xml
+
+# Crawl delay (adjust based on server capacity)
+Crawl-delay: 2
+
+# Special rules for search engines
+User-agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$
+
+User-agent: Bingbot
+Crawl-delay: 3
+
+User-agent: Yandex
+Disallow: /print/
+Disallow: /pdf-export/
