@@ -1,13 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        
+  <!-- Homepage (Highest Priority) -->
   <url>
-    <loc>https://fd-calculator.com/</loc>
-    <lastmod>2024-10-07</lastmod>
+    <loc>https://bmi-calculator.in/</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Calculator Tool -->
   <url>
-    <loc>https://fd-calculator.com/calculate</loc>
-    <lastmod>2024-10-07</lastmod>
+    <loc>https://bmi-calculator.in/#calculator</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Content Pages -->
+  <url>
+    <loc>https://bmi-calculator.in/#what-is-bmi</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmi-calculator.in/#faq</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmi-calculator.in/#about-us</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://bmi-calculator.in/privacy-policy</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmi-calculator.in/terms-of-service</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Dynamic Content (Example) -->
+  <url>
+    <loc>https://bmi-calculator.in/bmi-categories</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
