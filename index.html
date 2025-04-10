@@ -1,169 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculate your fixed deposit returns effortlessly with the FD Calculator at fd-calculator.com. Enter the initial amount, FD interest rate, and time period in days, months, or years for accurate results, and take the first step towards planning your financial future today.">
-    <meta name="keywords" content="FD Calculator, Fixed Deposit Calculator, FD Interest Rate, Maturity Value, fd-calculator.com, Financial Tools">
-    <meta name="author" content="FD Calculator">
-    <meta property="og:title" content="FD Calculator">
-    <meta property="og:description" content="An online tool for calculating fixed deposit returns">
-    <meta property="og:url" content="https://fd-calculator.com">
-    <meta property="og:type" content="website">
-    <title>FD Calculator - Calculate Fixed Deposit Interest & Maturity</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Schema Markup (JSON-LD) for SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BMI Calculator India – Accurate BMI Calculator for Men, Women & Kids</title>
+  
+  <meta name="description" content="Use our free and accurate BMI Calculator tailored for India. Calculate your Body Mass Index using age, weight (in kg), and height. Works for men, women, and kids." />
+  
+  <meta name="keywords" content="BMI calculator, BMI calculator India, BMI calculator in kg, BMI calculator for men, BMI calculator for women, BMI calculator with age, BMI calculator male, female BMI calculator, BMI chart India" />
+  
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bmi-calculator.in/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <meta property="og:title" content="BMI Calculator India – Fast & Accurate BMI Checker" />
+  <meta property="og:description" content="Quickly check your Body Mass Index with our BMI calculator designed for Indian users. Supports BMI calculation in kg, by age, and for all genders." />
+  <meta property="og:url" content="https://bmi-calculator.in/" />
+  <meta property="og:image" content="https://bmi-calculator.in/images/bmi-thumbnail.jpg" />
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BMI Calculator India – Accurate BMI for Men & Women" />
+  <meta name="twitter:description" content="Check your BMI using weight in kg, height, and age. Designed for Indian users. Try our BMI Calculator for men, women, and children." />
+  <meta name="twitter:image" content="https://bmi-calculator.in/images/bmi-thumbnail.jpg" />
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema Markup -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "FD Calculator",
-      "url": "https://fd-calculator.com/",
-      "description": "An online tool to calculate fixed deposit returns.",
-      "author": {
-        "@type": "Organization",
-        "name": "FD Calculator",
-        "url": "https://fd-calculator.com/about"
-      },
+      "name": "BMI Calculator India",
+      "url": "https://bmi-calculator.in",
+      "inLanguage": "en-IN",
+      "description": "Free and accurate BMI calculator designed for Indian users. Calculate your Body Mass Index using weight in kg, height, age, and gender. Works for men, women, and children.",
       "publisher": {
         "@type": "Organization",
-        "name": "FD Calculator",
-        "logo": "https://fd-calculator.com/images/logo.png",
-        "url": "https://fd-calculator.com"
+        "name": "BMI Calculator India",
+        "url": "https://bmi-calculator.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bmi-calculator.in/logo.png",
+          "width": 200,
+          "height": 60
+        }
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "Not Availabe",
-        "contactType": "Customer Service",
-        "areaServed": "IN",
-        "availableLanguage": "English"
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bmi-calculator.in/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "mainEntity": {
+        "@type": "WebApplication",
+        "name": "BMI Calculator Tool",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "url": "https://bmi-calculator.in",
+        "featureList": [
+          "BMI calculator for men",
+          "BMI calculator for women",
+          "BMI calculator with age",
+          "BMI calculator in kg and cm",
+          "Indian BMI chart"
+        ],
+        "audience": {
+          "@type": "Audience",
+          "geographicArea": {
+            "@type": "Place",
+            "name": "India"
+          }
+        }
       }
     }
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    
 </head>
-
 <body>
-<!-- Header with Hamburger Menu -->
-<header>
-    <div class="navbar">
-        <a href="/" class="logo">FD Calculator</a>
-        <div class="hamburger-menu">
-            <div></div>
-            <div></div>
-            <div></div>
+  <!-- Website Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="your-logo.jpg" alt="BMI Calculator Logo">
+        <div class="logo-text">
+          <h1>BMI Calculator</h1>
+         
         </div>
-        <ul class="navbar-links">
-            <li><a href="#calculator">Calculator</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#what-is-bmi">What is BMI</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about-us">About Us</a></li>
         </ul>
+      </nav>
     </div>
-</header>
-<!-- Calculator Form -->
-<section id="calculator">
-    <div class="container">
-        <h1>Fixed Deposit Calculator</h1>
-       
-        <form id="fdCalculatorForm">
-            <div class="input-group">
-                <label for="principal">Initial Amount (₹)</label>
-                <input type="number" id="principal" placeholder="10000" step="any" min="0" required>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-wrapper">
+    <main>
+      <!-- Calculator Section -->
+      <section id="calculator" class="container">
+        <h1>BMI Calculator</h1>
+        <h2>Calculate Your Body Mass Index</h2>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="gender-toggle">
+              <input type="radio" name="gender" id="male" value="Male" checked>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="Female">
+              <label for="female">Female</label>
             </div>
-            <div class="input-group">
-                <label for="rate">Interest Rate (%)</label>
-                <input type="number" id="rate" placeholder="6.5" step="any" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label for="age">Age</label>
+            <div class="input-container">
+              <input type="number" id="age" placeholder="Years" min="2" max="120">
+              <span class="unit-label">years</span>
             </div>
-            <div class="input-group">
-                <label for="tenure">Time Period</label>
-                <div class="time-period-wrapper">
-                    <input type="number" id="tenure" placeholder="5" step="any" min="0" required>
-                    <select id="tenure-unit">
-                        <option value="years">Years</option>
-                        <option value="months">Months</option>
-                        <option value="days">Days</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="input-group">
-                <div class="compounding-frequency-wrapper">
-                    <label for="compoundingFrequency-unit">Compounding Frequency</label>
-                    <select id="compoundingFrequency-unit">
-                        <option value="quarterly" selected>Quarterly</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="annually">Annually</option>
-                    </select>
-                </div>
-            </div>
-            <button type="submit">Calculate</button>
-            <div class="spinner" id="loadingSpinner"></div>
-        </form>
-        <div id="result" class="hidden">
-            <p>Total Interest Earned: ₹<span id="resultInterest"></span></p>
-            <p><strong>Total Maturity Value: ₹<span id="resultTotal"></span></strong></p>
+            <small>ages: 2 to 99 years</small>
+            <div class="error" id="ageError">Please enter a valid age</div>
+          </div>
         </div>
-        <canvas id="fdGrowthChart" width="400" height="200" style="display:none;"></canvas>
-        <canvas id="fdPieChart" style="display:none;"></canvas>
-        <!-- Fixed Deposit Section - This will appear after the graph -->
+        
+        <div class="form-row">
+          <div class="height-group" id="heightGroup">
+            <label>Height</label>
+            <div class="input-group">
+              <div class="input-container">
+                <input type="number" id="heightFt" placeholder="Feet" min="1" max="9" pattern="[0-9]*" inputmode="numeric">
+                <span class="unit-label">ft</span>
+              </div>
+              <div class="input-container">
+                <input type="number" id="heightIn" placeholder="Inch" min="0" max="11" pattern="[0-9]*" inputmode="numeric">
+                <span class="unit-label">in</span>
+              </div>
+            </div>
+            <span class="switch-unit" id="switchToCm">Switch to cm</span>
+            <div class="error" id="heightError">Please enter valid height</div>
+          </div>
+
+          <div class="form-group">
+            <label>Weight</label>
+            <div class="input-container">
+              <input type="number" id="weight" placeholder="Kilogram" min="10" max="300">
+              <span class="unit-label">kg</span>
+            </div>
+            <div class="error" id="weightError">Please enter valid weight</div>
+          </div>
+        </div>
+
+        <button id="calculateBtn">Calculate BMI</button>
+        
+        <!-- Ad Space Below Calculator -->
+        <div class="ad-container" style="margin-top: 20px;">
+          <p>Advertisement</p>
+          <!-- Google AdSense Code Here -->
+        </div>
+
+        <div class="result-box" id="resultBox">
+          <div class="bmi-label">YOUR BMI</div>
+          <div class="bmi-value" id="bmiResult">--</div>
+          <div class="weight-status" id="weightStatus">Enter your details to calculate</div>
+          <div class="bar">
+            <div class="bar-segment underweight" data-min="0" data-max="18.5"></div>
+            <div class="bar-segment normal" data-min="18.5" data-max="25"></div>
+            <div class="bar-segment overweight" data-min="25" data-max="30"></div>
+            <div class="bar-segment obese" data-min="30" data-max="40"></div>
+            <div class="needle" id="needle" style="left: 0;"></div>
+          </div>
+          <div class="bar-labels">
+            <span style="color:#3498db">Under.wt (&lt;18.5)</span>
+            <span style="color:#2ecc71">Normal (18.5-24.9)</span>
+            <span style="color:#e67e22">Over.wt (25-29.9)</span>
+            <span style="color:#e74c3c">Obese (≥30)</span>
+          </div>
+          
+          <div id="detailedFeedback">
+            <p>💡 <strong>Your Health Tips:</strong></p>
+            <ul id="healthTips">
+              <li>Enter your details to see personalized health tips</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- What is BMI Section -->
+      <section id="what-is-bmi" class="content-section">
+        <h2>What is BMI?</h2>
+        <p>Body Mass Index (BMI) is a numerical value calculated from your weight and height that provides a reliable indicator of body fatness for most people. It is used to screen for weight categories that may lead to health problems.</p>
+        
+        <div class="formula-box">
+            <h3>Standard BMI Formula</h3>
+            <p><strong>BMI = weight (kg) / (height in meters)<sup>2</sup></strong></p>
+            <p>For adults (18+ years):</p>
+            <ul>
+              <li><strong>Underweight:</strong> BMI &lt; 18.5</li>
+              <li><strong>Normal:</strong> 18.5 - 24.9</li>
+              <li><strong>Overweight:</strong> 25 - 29.9</li>
+              <li><strong>Obese:</strong> ≥ 30</li>
+            </ul>
+          </div>
+        <h3>How to Use This Calculator</h3>
+        <ol>
+          <li>Select your gender (male/female)</li>
+          <li>Enter your age (2-99 years)</li>
+          <li>Input your height in feet+inches or centimeters</li>
+          <li>Enter your weight in kilograms</li>
+          <li>Click "Calculate BMI" to see your results</li>
+        </ol>
+        
+         </section>
+      
+      <!-- Indian BMI Section -->
+      <section id="indian-bmi" class="content-section">
+        <h2>Why BMI Standards Differ for Indians</h2>
+        <p>Research shows Indians have unique body composition:</p>
+        <ul>
+          <li><strong>Higher body fat percentage</strong> at lower BMI compared to Caucasians</li>
+          <li><strong>More abdominal fat</strong> (central obesity) even at normal BMI</li>
+          <li><strong>Increased metabolic risks</strong> starting at BMI ≥23 (vs ≥25 for Western populations)</li>
+          <li><strong>Lower muscle mass</strong> contributing to different health risks</li>
+        </ul>
+        
+        <h3>BMI Chart for Indian Adults</h3>
+        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+          <tr style="background-color: #3498db; color: white;">
+            <th style="padding: 10px; text-align: left;">Category</th>
+            <th style="padding: 10px; text-align: left;">BMI Range</th>
+            <th style="padding: 10px; text-align: left;">Health Risk</th>
+          </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 10px;">Underweight</td>
+            <td style="padding: 10px;">&lt; 18.5</td>
+            <td style="padding: 10px;">Nutritional deficiency</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 10px;">Normal</td>
+            <td style="padding: 10px;">18.5 - 22.9</td>
+            <td style="padding: 10px;">Low risk</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 10px;">Overweight</td>
+            <td style="padding: 10px;">23 - 24.9</td>
+            <td style="padding: 10px;">Moderate risk</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Obese</td>
+            <td style="padding: 10px;">≥ 25</td>
+            <td style="padding: 10px;">High risk</td>
+          </tr>
+        </table>
+        <div class="content-section">
+            <h3>Waist Circumference Matters</h3>
+            <p>For Indians, waist measurement is equally important:</p>
+            <ul style="margin-top: 10px;">
+              <li><strong>Men:</strong> Keep below 90cm (35.5 inches)</li>
+              <li><strong>Women:</strong> Keep below 80cm (31.5 inches)</li>
+            </ul>
+            <p style="margin-top: 10px;">Higher waist circumference increases risk of diabetes and heart disease.</p>
+          </div>
+      </section>
+       
+      <!-- FAQ Section -->
+      <section id="faq" class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item" style="margin-bottom: 25px;">
+          <h3>Is BMI accurate for everyone?</h3>
+          <p>BMI is a useful screening tool but doesn't directly measure body fat. It may overestimate body fat in athletes and underestimate it in older persons or those who have lost muscle.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 25px;">
+            <h3>Is BMI accurate for Indians?</h3>
+            <p>While BMI is a useful screening tool, Indians tend to have higher body fat percentage at lower BMI levels compared to Western populations. Many experts suggest using lower BMI cut-offs for Indians to identify health risks.</p>
+          </div>
+          
+          <div class="faq-item" style="margin-bottom: 25px;">
+            <h3>What is the ideal BMI for Indian men and women?</h3>
+            <p>For Indians, the ideal BMI range is generally considered to be between 18.5 to 22.9 kg/m² for both men and women. This is slightly lower than the international standard of 18.5-24.9 due to our body composition differences.</p>
+          </div>
+        
+        <div class="faq-item" style="margin-bottom: 25px;">
+          <h3>How often should I check my BMI?</h3>
+          <p>For most adults, checking BMI every 3-6 months is sufficient unless you're actively trying to lose or gain weight.</p>
+        </div>
+        
+        <div class="faq-item" style="margin-bottom: 25px;">
+          <h3>Does BMI differ for men and women?</h3>
+          <p>The BMI calculation is the same for both genders, but women tend to have more body fat than men at the same BMI.</p>
+        </div>
+      </section>
+      
+      <!-- About Us Section -->
+      <section id="about-us" class="content-section">
+        <h2>About Us</h2>
+        <p>Welcome to BMI-Calculator.in, your reliable source for accurate BMI calculations and health information. Our mission is to provide easy-to-use tools that help you understand and monitor your health metrics.</p>
+        
+        <h3>Our Goal</h3>
+        <p>We aim to:</p>
+        <ul>
+          <li>Provide accurate BMI calculations</li>
+          <li>Offer clear health information</li>
+          <li>Help users make informed health decisions</li>
+          <li>Promote healthy lifestyle choices</li>
+        </ul>
+        <section id="disclaimer" class="content-section">
+        <h3>Disclaimer</h3>
+        <p>This BMI calculator is for informational purposes only and is not intended as medical advice. Always consult with a healthcare professional before making any health related decisions.</p>
+      </section>
+    </main>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="ad-container">
+        <p>Advertisement</p>
+        <!-- Google AdSense Code -->
+      </div>
+      <div class="content-section">
+      <h3>Standard BMI Categories</h3>
+        <ul>
+          <li><strong>Underweight:</strong> BMI less than 18.5</li>
+          <li><strong>Normal weight:</strong> BMI 18.5 to 24.9</li>
+          <li><strong>Overweight:</strong> BMI 25 to 29.9</li>
+          <li><strong>Obese:</strong> BMI 30 or greater</li>
+        </ul>
+      </div>
+      
+      <div class="content-section">
+        <h3>Health Tips</h3>
+        <ul>
+          <li>Measure BMI regularly</li>
+          <li>Combine with waist measurement</li>
+          <li>Consult doctor if concerned</li>
+          <li>Don’t compare BMI blindly — consider muscle mass too</>
+        </ul>
+      </div>
+      
+      <div class="ad-container">
+        <p>Advertisement</p>
+        <!-- Google AdSense Code -->
+      </div>
+    </aside>
+    
     </div>
-</section>
-<div>
-<section id="fd-info">
-<h3>What is Fixed Deposit (FD)?</h3>
-<p>A Fixed Deposit (FD) is a financial product offered by banks and non-banking financial companies (NBFCs) that provides investors with a higher rate of interest than a regular savings account, until the given maturity date. It is a risk-free investment option with a fixed time period, during which the investor cannot withdraw the funds without penalties.</p>
-
-<h3>Benefits of Fixed Deposit</h3>
-<p>Fixed Deposits come with several benefits that make them an attractive option for conservative investors:</p>
-<ul>
-    <li><strong>Guaranteed Returns:</strong> Fixed Deposits offer guaranteed returns with no market risks, ensuring that your investment grows safely.</li>
-    <li><strong>High Interest Rates:</strong> FD interest rates are higher than those of regular savings accounts, allowing your money to grow faster.</li>
-    <li><strong>Flexible Time Period:</strong> You can choose the time period of your FD as per your financial goals, ranging from a few months to several years.</li>
-    <li><strong>Loan Against FD:</strong> In case of an emergency, you can take a loan against your FD without having to break it.</li>
-    <li><strong>Tax Benefits:</strong> Under section 80C of the Income Tax Act, investors can claim tax deductions on Fixed Deposits with a 5-year time period or more.</li>
-</ul>
-
-<h3>Pros of Fixed Deposits</h3>
-<p>Fixed Deposits are widely regarded as one of the safest forms of investment due to the following pros:</p>
-<ul>
-    <li><strong>Low Risk:</strong> Since FD returns are not dependent on market performance, they are less risky compared to other investments like stocks or mutual funds.</li>
-    <li><strong>Predictable Income:</strong> The interest earned on FD is fixed at the time of investment, making it easier to plan your finances.</li>
-    <li><strong>Interest Payment Options:</strong> You can choose between monthly, quarterly, or yearly interest payout options, depending on your needs.</li>
-    <li><strong>Capital Protection:</strong> Your principal investment is safe and protected by the bank or NBFC, with minimal chances of loss.</li>
-</ul>
-
-<h3>Risks of Fixed Deposits</h3>
-<p>Though Fixed Deposits are considered a safe investment, they do come with a few risks:</p>
-<ul>
-    <li><strong>Inflation Risk:</strong> The returns on FD may not always exceed inflation, leading to a decrease in the real value of your money over time.</li>
-    <li><strong>Fund Accessibility:</strong> FD funds are locked for the chosen time period, and early withdrawal may lead to penalties or reduced interest rates.</li>
-    <li><strong>Tax on Interest:</strong> Interest earned on Fixed Deposits is subject to tax as per applicable tax rates, which reduces the overall returns.</li>
-    <li><strong>Fixed Returns:</strong> FDs do not offer the flexibility of higher returns like stocks or mutual funds during periods of market growth.</li>
-</ul>
-
-<h3>Conclusion</h3>
-<p>Fixed Deposits are a reliable investment tool for low-risk individuals who prefer safety and fixed returns. While they may not offer the high returns that some other investments provide, their reliability and security make them an ideal option for conservative investors, especially for long-term savings goals or retirement planning.</p>
-</section>
-</div>
-<!-- About Section -->
-<section id="about">
-    <h2>About FD Calculator</h2>
-    <p>This tool helps you easily calculate fixed deposit returns based on your input of principal amount, interest
-        rate, and time period.</p>
-</section>
+    
   <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 FD Calculator. All rights reserved.</p>
-        <p><a href="#contact">Contact Us |</a> <a href="#">Terms of Use</a></p>
-    </footer>
-   
-<script src="script.js"></script>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#calculator">BMI Calculator</a></li>
+          <li><a href="#what-is-bmi">What is BMI</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/cookie-policy">Cookie Policy</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/feedback">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 BMI-Calculator.in - All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
-</html>
+</html
